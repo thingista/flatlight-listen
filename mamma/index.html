@@ -8,6 +8,8 @@
 <meta property="og:title" content="Flat Light — Mamma">
 <meta property="og:description" content="New from Flat Light. Listen now.">
 <meta property="og:type" content="music.song">
+<meta property="og:image" content="https://thingista.github.io/flatlight-listen/art/flatlight.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -29,21 +31,15 @@ src="https://www.facebook.com/tr?id=1805393580511406&ev=PageView&noscript=1"/></
     font-family:'Space Grotesk',system-ui,sans-serif;
     display:flex; align-items:center; justify-content:center; padding:28px; }
   .glow { position:fixed; inset:0; z-index:0; pointer-events:none;
-    background:radial-gradient(ellipse 70% 55% at 50% 30%, rgba(120,90,210,.28), rgba(20,20,19,0) 70%); }
-  .card { position:relative; z-index:1; width:100%; max-width:460px; text-align:center; }
-  .wm { margin:0 0 6px; font-family:'Archivo Black',sans-serif; font-weight:400;
-    font-size:clamp(44px,13vw,72px); line-height:.86; letter-spacing:-.03em; text-transform:uppercase;
-    background-image:linear-gradient(135deg,#44E0EE,#54B2FF,#6A78FF,#B06BF0,#F066B0,#FF9E82,#FFC56A);
-    -webkit-background-clip:text; background-clip:text; color:transparent; -webkit-text-fill-color:transparent; }
-  .yline { width:132px; height:5px; background:#F2DF00; margin:14px auto 26px; }
-  .tag { font-weight:600; font-size:13px; letter-spacing:.34em; color:#9A968E;
-    text-transform:uppercase; margin-bottom:30px; }
-  .song { font-family:'Archivo Black',sans-serif; font-size:clamp(30px,8vw,44px);
+    background:radial-gradient(ellipse 70% 55% at 50% 28%, rgba(120,90,210,.26), rgba(20,20,19,0) 70%); }
+  .card { position:relative; z-index:1; width:100%; max-width:440px; text-align:center; }
+  .art { width:100%; display:block; border-radius:16px; margin:0 auto 26px;
+    box-shadow:0 18px 50px rgba(0,0,0,.45); }
+  .song { font-family:'Archivo Black',sans-serif; font-weight:400; font-size:clamp(30px,8vw,44px);
     text-transform:uppercase; letter-spacing:-.02em; margin:0 0 6px; color:#F4F1EA; }
-  .song .dot { color:var(--accent); }
-  .out { font-weight:700; font-size:14px; letter-spacing:.3em; color:var(--accent);
+  .out { font-weight:700; font-size:13px; letter-spacing:.3em; color:var(--accent);
     text-transform:uppercase; margin:0 0 24px; }
-  .embed { margin:0 0 26px; }
+  .embed { margin:0 0 20px; }
   .embed iframe { border:0; border-radius:12px; width:100%; height:152px; display:block; }
   .btn { display:flex; align-items:center; justify-content:center; gap:10px;
     width:100%; padding:17px 22px; border-radius:40px; text-decoration:none;
@@ -53,18 +49,18 @@ src="https://www.facebook.com/tr?id=1805393580511406&ev=PageView&noscript=1"/></
   .secondary { margin-top:16px; display:flex; gap:22px; justify-content:center; flex-wrap:wrap; }
   .secondary a { color:#9A968E; text-decoration:none; font-weight:600; font-size:14px; letter-spacing:.06em; }
   .secondary a:hover { color:#E7E4DE; }
-  .foot { margin-top:34px; font-size:13px; letter-spacing:.18em; color:#6A6760; }
+  .foot { margin-top:30px; font-size:13px; letter-spacing:.14em; }
+  .foot a { color:#8A867E; text-decoration:none; }
+  .foot a:hover { color:#E7E4DE; }
   @media (max-width:380px) { .secondary { gap:14px; } }
 </style>
 </head>
 <body>
 <div class="glow"></div>
 <main class="card">
-  <h1 class="wm">Flat<br>Light</h1>
-  <div class="yline"></div>
-  <div class="tag">Electronic&nbsp;&nbsp;Music</div>
+  <img class="art" src="../art/flatlight.jpg" alt="Flat Light — electronic music" width="1080" height="1080">
 
-  <h2 class="song">Mamma<span class="dot">.</span></h2>
+  <h2 class="song">Mamma</h2>
   <p class="out">Out now</p>
 
   <div class="embed">
@@ -83,7 +79,10 @@ src="https://www.facebook.com/tr?id=1805393580511406&ev=PageView&noscript=1"/></
     <a href="https://open.spotify.com/artist/4fgVR6jftAMZEt0xeStQbU" target="_blank" rel="noopener">More from Flat Light</a>
   </div>
 
-  <div class="foot">@flatlightmusic</div>
+  <div class="foot">
+    <a href="https://instagram.com/flatlightmusic" target="_blank" rel="noopener"
+       onclick="try{fbq('trackCustom','ClickInstagram',{content_name:'Mamma'});}catch(e){}">@flatlightmusic</a>
+  </div>
 </main>
 </body>
 </html>
